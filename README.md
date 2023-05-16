@@ -1,5 +1,4 @@
 # AI Science Medicine
-
 <img src = "https://raw.githubusercontent.com/williamedwardhahn/AI_Science_Medicine/main/brainscope.png">
 
 ## Slides
@@ -16,11 +15,8 @@
 * Deep Convolutional Networks
 * Generative Networks
 
-
-## Medbot Projects
-* Expert System
-* AI Microscope
-
+## Medbot Project
+* AI Microscope Lightbox Dashboard
 
 
 ## Assigned Materials
