@@ -3,6 +3,7 @@
 
 ## Links
 [Slides](https://docs.google.com/presentation/d/1PFtKiAKlz5O_YdiHQfjCAtIKtdbo8XqsjJuB9G7UJhY/edit?usp=sharing)
+
 [MedMNIST](https://arxiv.org/pdf/2110.14795.pdf)
 
 ## Lab Notebooks
