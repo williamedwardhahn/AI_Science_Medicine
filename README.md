@@ -16,7 +16,7 @@
 * Generative Networks
 
 ## Medbot Project
-* AI Microscope Lightbox Dashboard
+* AI Microscope Dashboard
 
 
 ## Assigned Materials
