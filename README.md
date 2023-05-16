@@ -1,6 +1,9 @@
 # AI for Science and Medicine
 <img src = "https://raw.githubusercontent.com/williamedwardhahn/AI_Science_Medicine/main/brainscope.png">
 
+## Syllabus
+[Link](https://docs.google.com/document/d/1zYIAWa1aESI2yYJdr2-5ZNpNvcPW3PcUiT36h5JsVfk/edit?usp=sharing)
+
 ## Links
 [Slides](https://docs.google.com/presentation/d/1PFtKiAKlz5O_YdiHQfjCAtIKtdbo8XqsjJuB9G7UJhY/edit?usp=sharing)
 
@@ -29,4 +32,6 @@
 [The Age of Intelligent Machines](https://www.youtube.com/watch?v=subiSt2Mf4Y)
 
 [Full Video Playlist](https://www.youtube.com/watch?v=5-acCtyKf7E&list=PLWmIsQcAzRkqIwDmziFSPnJhgYppTNj7v)
+
+[Computers 101](https://www.youtube.com/watch?v=4sngIh0YJtk&list=PLC4820150EF5C2DC7)
 
