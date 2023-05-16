@@ -1,4 +1,4 @@
-# AI Science Medicine
+# AI for Science and Medicine
 <img src = "https://raw.githubusercontent.com/williamedwardhahn/AI_Science_Medicine/main/brainscope.png">
 
 ## Slides
