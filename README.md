@@ -1,3 +1,3 @@
-# AI_Science_Medicine
+# AI Science Medicine
 
 <img src = "https://raw.githubusercontent.com/williamedwardhahn/AI_Science_Medicine/main/brainscope.png">
