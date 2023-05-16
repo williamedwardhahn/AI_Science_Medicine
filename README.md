@@ -17,10 +17,10 @@
 * Generative Networks
 
 
-## Project
+## Medbot Projects
+* Expert System
+* AI Microscope
 
-Medbot: 
-Visual Expert System
 
 
 ## Assigned Materials
