@@ -28,3 +28,5 @@
 
 [The Age of Intelligent Machines](https://www.youtube.com/watch?v=subiSt2Mf4Y)
 
+[Full Video Playlist](https://www.youtube.com/watch?v=5-acCtyKf7E&list=PLWmIsQcAzRkqIwDmziFSPnJhgYppTNj7v)
+
