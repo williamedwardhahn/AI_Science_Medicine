@@ -9,7 +9,15 @@
 
 [MedMNIST](https://arxiv.org/pdf/2110.14795.pdf)
 
-## Lab Notebooks
+## Labs
+* Microscope Low Power
+* Microscope High Power
+* Endoscope
+* Eye Scanner
+* RF Sanner
+* ESP32 Camera
+
+## Notebooks
 
 * Scientific Programming
 * Datasets
