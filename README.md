@@ -14,7 +14,7 @@
 * Microscope High Power
 * Endoscope
 * Eye Scanner
-* RF Sanner
+* Web Camera
 * ESP32 Camera
 
 ## Notebooks
