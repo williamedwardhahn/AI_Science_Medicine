@@ -125,3 +125,10 @@ SVG uses similar styling to CSS. You can set `fill` and `stroke` properties to d
 </svg>
 ```
 
+## Show SVG in Colab
+```
+from IPython.display import SVG, display
+def show_svg(x):
+    display(SVG(x))
+```
+
