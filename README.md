@@ -1,5 +1,5 @@
 # AI for Science and Medicine
-<!-- <img src = "https://www.mccrone.com/wp-content/uploads/2015/04/Diatoms_WF_Fig01.jpg"> -->
+<img src = "https://www.mccrone.com/wp-content/uploads/2015/04/Diatoms_WF_Fig01.jpg">
 
 ## Syllabus
 [Link](https://docs.google.com/document/d/1zYIAWa1aESI2yYJdr2-5ZNpNvcPW3PcUiT36h5JsVfk/edit?usp=sharing)
