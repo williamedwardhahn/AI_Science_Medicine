@@ -1,13 +1,12 @@
 # AI for Science and Medicine
 <img src = "https://www.mccrone.com/wp-content/uploads/2015/04/Diatoms_WF_Fig01.jpg">
 
-## Syllabus
-[Link](https://docs.google.com/document/d/1zYIAWa1aESI2yYJdr2-5ZNpNvcPW3PcUiT36h5JsVfk/edit?usp=sharing)
+# Intro Notes
+* [Python](https://github.com/williamedwardhahn/AI_Science_Medicine/blob/main/Python_Notes.md)
+* [HTML](https://github.com/williamedwardhahn/AI_Science_Medicine/blob/main/HTML_Notes.md)
+* [CSS](https://github.com/williamedwardhahn/AI_Science_Medicine/blob/main/CSS_Notes.md)
+* [SVG](https://github.com/williamedwardhahn/AI_Science_Medicine/blob/main/SVG_Notes.md)
 
-## Links
-[Slides](https://docs.google.com/presentation/d/1PFtKiAKlz5O_YdiHQfjCAtIKtdbo8XqsjJuB9G7UJhY/edit?usp=sharing)
-
-[MedMNIST](https://arxiv.org/pdf/2110.14795.pdf)
 
 ## Labs
 * Microscope Low Power
@@ -45,4 +44,12 @@
 <!--[Full Video Playlist](https://www.youtube.com/watch?v=5-acCtyKf7E&list=PLWmIsQcAzRkqIwDmziFSPnJhgYppTNj7v)-->
 
 [Computers 101](https://www.youtube.com/watch?v=4sngIh0YJtk&list=PLC4820150EF5C2DC7)
+
+## Syllabus
+[Link](https://docs.google.com/document/d/1zYIAWa1aESI2yYJdr2-5ZNpNvcPW3PcUiT36h5JsVfk/edit?usp=sharing)
+
+## Links
+[Slides](https://docs.google.com/presentation/d/1PFtKiAKlz5O_YdiHQfjCAtIKtdbo8XqsjJuB9G7UJhY/edit?usp=sharing)
+
+[MedMNIST](https://arxiv.org/pdf/2110.14795.pdf)
 
