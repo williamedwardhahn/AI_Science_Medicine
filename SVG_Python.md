@@ -224,14 +224,14 @@ svg_slices = ''
 total = sum(values)
 prev_angle = 0
 for i, value in enumerate(values):
-    angle = 360 * value / total
-    large_arc = 1 if angle > 180 else 0
-    x = 50 + 50 * math.cos(math.radians(prev_angle + angle))  # convert polar coordinates to cartesian
-    y = 50 + 50 * math.sin(math.radians(prev_angle + angle))
+    angle = 2 * math.pi * value / total
+    large_arc = 1 if angle > math.pi else 0
+    x1 = 50 + 50 * math.cos(prev_angle)
+    y1 = 50 + 50 * math.sin(prev_angle)
+    x2 = 50 + 50 * math.cos(prev_angle + angle)
+    y2 = 50 + 50 * math.sin(prev_angle + angle)
     svg_slices += f'''
-        <path d="M50,50 L50,0 A50,50 0 {large_arc},1 {x},{y
-
-} z" fill="{colors[i]}" />
+        <path d="M50,50 L{x1},{y1} A50,50 0 {large_arc},1 {x2},{y2} z" fill="{colors[i]}" />
     '''
     prev_angle += angle
 
@@ -240,7 +240,6 @@ pie_chart_svg = f'''
         {svg_slices}
     </svg>
 '''
-
 print(pie_chart_svg)
 ```
 
