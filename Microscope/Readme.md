@@ -1,5 +1,3 @@
-Sure, let's break it down:
-
 ## Importing Required Libraries
 
 This script starts by importing the required libraries:
