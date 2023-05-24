@@ -6,6 +6,8 @@
 * [HTML](https://github.com/williamedwardhahn/AI_Science_Medicine/blob/main/HTML_Notes.md)
 * [CSS](https://github.com/williamedwardhahn/AI_Science_Medicine/blob/main/CSS_Notes.md)
 * [SVG](https://github.com/williamedwardhahn/AI_Science_Medicine/blob/main/SVG_Notes.md)
+* [SVG+Python](https://github.com/williamedwardhahn/AI_Science_Medicine/blob/main/SVG_Python.md)
+* [HTML+Python](https://github.com/williamedwardhahn/AI_Science_Medicine/blob/main/HTML_Python.md)
 
 
 ## Labs
