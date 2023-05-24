@@ -62,56 +62,57 @@ This example demonstrates generating SVGs for dice faces. We first define the SV
 
 ```python
 dice_faces_svg = {
-        1: '''
-            <circle cx="100" cy="100" r="10" fill="black" />
-        ''',
-        2: '''
-            <circle cx="50" cy="50" r="10" fill="black" />
-            <circle cx="150" cy="150" r="10" fill="black" />
-        ''',
-        3: '''
-            <circle cx="50" cy="50" r="10" fill="black" />
-            <circle cx="100" cy="100" r="10" fill="black" />
-            <circle cx="150" cy="150" r="10" fill="black" />
-        ''',
-        4: '''
-            <circle cx="50" cy="50" r="10" fill="black" />
-            <circle cx="150" cy="50" r="10" fill="black" />
-            <circle cx="50" cy="150" r="10" fill="black" />
-            <circle cx="150" cy="150" r="10" fill="black" />
-        ''',
-        5: '''
-            <circle cx="50" cy="50" r="10" fill="black" />
-            <circle cx="150" cy="50" r="10" fill="black" />
-            <circle cx="100" cy="100" r="10" fill="black" />
-            <circle cx="50" cy="150" r="10" fill="black" />
-            <circle cx="150" cy="150" r="10" fill="black" />
-        ''',
-        6: '''
-            <circle cx="50" cy="50" r="10" fill="black" />
-            <circle cx="150" cy="50" r="10" fill="black" />
-            <circle cx="50" cy="100" r="10" fill="black" />
-            <circle cx="150" cy="100" r="10" fill="black" />
-            <circle cx="50" cy="150" r="10" fill="black" />
-            <circle cx="150" cy="150" r="10" fill="black" />
-        '''
-    }
+    1: '''
+        <circle cx="100" cy="100" r="10" fill="white" />
+    ''',
+    2: '''
+        <circle cx="50" cy="50" r="10" fill="white" />
+        <circle cx="150" cy="150" r="10" fill="white" />
+    ''',
+    3: '''
+        <circle cx="50" cy="50" r="10" fill="white" />
+        <circle cx="100" cy="100" r="10" fill="white" />
+        <circle cx="150" cy="150" r="10" fill="white" />
+    ''',
+    4: '''
+        <circle cx="50" cy="50" r="10" fill="white" />
+        <circle cx="50" cy="150" r="10" fill="white" />
+        <circle cx="150" cy="50" r="10" fill="white" />
+        <circle cx="150" cy="150" r="10" fill="white" />
+    ''',
+    5: '''
+        <circle cx="50" cy="50" r="10" fill="white" />
+        <circle cx="50" cy="150" r="10" fill="white" />
+        <circle cx="100" cy="100" r="10" fill="white" />
+        <circle cx="150" cy="50" r="10" fill="white" />
+        <circle cx="150" cy="150" r="10" fill="white" />
+    ''',
+    6: '''
+        <circle cx="50" cy="50" r="10" fill="white" />
+        <circle cx="50" cy="100" r="10" fill="white" />
+        <circle cx="50" cy="150" r="10" fill="white" />
+        <circle cx="150" cy="50" r="10" fill="white" />
+        <circle cx="150" cy="100" r="10" fill="white" />
+        <circle cx="150" cy="150" r="10" fill="white" />
+    '''
+}
 
-
-dice_faces = [1, 2, 3, 4, 5, 6] # replace with actual dice faces
+dice_faces = [1, 2, 3, 4, 5, 6]  # replace with actual dice faces
 dice_svgs = ''
 for i in range(len(dice_faces)):
     x_offset = 220 * i
     dice_svgs += f'''
         <svg x="{x_offset}" width="200" height="200" viewBox="0 0 200 200">
-            <rect x="10" y="10" width="180" height="180" rx="20" ry="20" fill="#{background_colors[i]}" />
-            {dice
-
-_faces_svg[dice_faces[i]]}
+            <rect x="10" y="10" width="180" height="180" rx="20" ry="20" fill="black" />
+            {dice_faces_svg[dice_faces[i]]}
         </svg>
     '''
 
-print(dice_svgs)
+# Wrap all individual SVG elements inside a parent SVG element
+dice_svgs = f'<svg width="{220*len(dice_faces)}" height="200" viewBox="0 0 {220*len(dice_faces)} 200">{dice_svgs}</svg>'
+
+
+show_svg(dice_svgs)
 ```
 
 In this example, the `{x_offset}` in the SVG is replaced with the value of `x_offset`, and `{dice_faces_svg[dice_faces[i]]}` is replaced with the SVG string corresponding to the face of the dice.
@@ -245,3 +246,10 @@ print(pie_chart_svg)
 
 These are simple examples and do not include scaling of the values to fit within the viewbox or any labeling. Also, please note that SVG is not typically used for plotting in this way - a dedicated library like matplotlib or seaborn would be much more suitable for complex scientific plotting.
 
+
+## Display in Colab
+```
+from IPython.display import SVG, display
+def show_svg(x):
+    display(SVG(x))
+```
