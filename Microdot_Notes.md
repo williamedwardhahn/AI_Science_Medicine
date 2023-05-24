@@ -6,6 +6,11 @@ Microdot is a lightweight web framework for Python. This guide will help you und
 
 The basic setup for a Microdot application involves importing the necessary libraries and creating an instance of the Microdot application.
 
+
+```python
+pip install microdot
+```
+
 ```python
 from microdot import Microdot, Response
 
