@@ -1,5 +1,5 @@
 
-# Guide to HTML
+# Beginner's Guide to HTML
 
 HTML stands for HyperText Markup Language. It's the standard markup language used to create web pages. In this primer, we'll go through the basics of HTML.
 
