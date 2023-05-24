@@ -150,3 +150,99 @@ print(svg_image)
 ```
 
 Here, the `{red}`, `{yellow}`, and `{green}` in the SVG are replaced with their corresponding color codes.
+
+
+
+# Using Python F-string to Generate SVG Scatter, Bar and Pie Plots
+
+In this guide, we will create scatter, bar, and pie plots using SVG and Python f-strings. 
+
+## Scatter Plot
+
+A scatter plot uses dots to represent values for two different numeric variables. The position of each dot on the horizontal and vertical axis indicates values for an individual data point.
+
+```python
+points = [(10,20), (30,40), (50,60), (70,80)]  # coordinates of the points
+axis_color = "black"
+point_color = "red"
+
+svg_points = ''
+for point in points:
+    # we multiply y coordinate by -1 to flip the SVG's coordinate system
+    svg_points += f'<circle cx="{point[0]}" cy="{-point[1]}" r="5" fill="{point_color}" />'
+
+scatter_plot_svg = f'''
+    <svg width="200" height="200" viewBox="-10 -110 120 120">
+        <line x1="0" y1="0" x2="100" y2="0" stroke="{axis_color}" />
+        <line x1="0" y1="0" x2="0" y2="-100" stroke="{axis_color}" />
+        {svg_points}
+    </svg>
+'''
+
+print(scatter_plot_svg)
+```
+
+## Bar Plot
+
+A bar plot is a chart that represents categorical data with rectangular bars with lengths proportional to the values that they represent.
+
+```python
+bar_values = [10, 30, 50, 70]  # heights of the bars
+bar_width = 10  # width of the bars
+bar_spacing = 15  # space between bars
+axis_color = "black"
+bar_color = "blue"
+
+svg_bars = ''
+for i, value in enumerate(bar_values):
+    x_position = i * (bar_width + bar_spacing)
+    y_position = 100 - value  # we subtract value from 100 to flip the SVG's coordinate system
+    svg_bars += f'<rect x="{x_position}" y="{y_position}" width="{bar_width}" height="{value}" fill="{bar_color}" />'
+
+bar_plot_svg = f'''
+    <svg width="200" height="200" viewBox="0 0 120 120">
+        <line x1="0" y1="100" x2="{len(bar_values) * (bar_width + bar_spacing) - bar_spacing}" y2="100" stroke="{axis_color}" />
+        <line x1="0" y1="0" x2="0" y2="100" stroke="{axis_color}" />
+        {svg_bars}
+    </svg>
+'''
+
+print(bar_plot_svg)
+```
+
+## Pie Chart
+
+A pie chart is a circular statistical graphic, which is divided into slices to illustrate numerical proportion.
+
+```python
+import math
+
+values = [10, 20, 30, 40]  # proportions for the pie chart
+colors = ["red", "green", "blue", "yellow"]  # colors for each slice
+
+svg_slices = ''
+total = sum(values)
+prev_angle = 0
+for i, value in enumerate(values):
+    angle = 360 * value / total
+    large_arc = 1 if angle > 180 else 0
+    x = 50 + 50 * math.cos(math.radians(prev_angle + angle))  # convert polar coordinates to cartesian
+    y = 50 + 50 * math.sin(math.radians(prev_angle + angle))
+    svg_slices += f'''
+        <path d="M50,50 L50,0 A50,50 0 {large_arc},1 {x},{y
+
+} z" fill="{colors[i]}" />
+    '''
+    prev_angle += angle
+
+pie_chart_svg = f'''
+    <svg width="200" height="200" viewBox="0 0 100 100">
+        {svg_slices}
+    </svg>
+'''
+
+print(pie_chart_svg)
+```
+
+These are simple examples and do not include scaling of the values to fit within the viewbox or any labeling. Also, please note that SVG is not typically used for plotting in this way - a dedicated library like matplotlib or seaborn would be much more suitable for complex scientific plotting.
+
