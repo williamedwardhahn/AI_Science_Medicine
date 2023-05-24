@@ -1,4 +1,3 @@
-```markdown
 # A Basic Guide to the Microdot Microframework
 
 Microdot is a lightweight web framework for Python. This guide will help you understand the basic features of Microdot and how to use them, by creating several simple examples.
