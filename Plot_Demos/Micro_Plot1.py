@@ -2,7 +2,7 @@ import base64
 import io
 from io import BytesIO
 import numpy as np
-from microdot_asyncio import Microdot, Response
+from microdot import Microdot, Response
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 
@@ -10,7 +10,7 @@ app = Microdot()
 
 @app.route('/')
 @app.route('/<points>')
-async def hello(request, points = "10"):
+def hello(request, points = "10"):
 
     points = int(points)
 
