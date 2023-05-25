@@ -36,6 +36,8 @@
 
 ## Assigned Materials
 
+[Expert Systems](https://www.youtube.com/watch?v=uMN3hVe2rm8)
+
 [With a Little Help from Chip](https://clp.bbcrewind.co.uk/e6cf9d36e23a3a0b8fd954cc96a0b361)
 
 [The Versatile Machine](https://clp.bbcrewind.co.uk/787be646f4e2ce1e2799bbde7d9ba837)
