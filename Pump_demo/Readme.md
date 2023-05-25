@@ -1,5 +1,3 @@
-Sure! Here's the explanation of the code using Markdown format:
-
 ```python
 # Aquaponics System Control
 
