@@ -2,7 +2,7 @@
 #Coin Flip
 ######################################################################
 
-from microdot_asyncio import Microdot, Response
+from microdot import Microdot, Response
 app = Microdot()
 Response.default_content_type = 'text/html'
 
@@ -47,7 +47,7 @@ app.run(debug=True, port=8008)
 #Guessing Game
 ######################################################################
 
-from microdot_asyncio import Microdot, Response
+from microdot import Microdot, Response
 import random
 
 app = Microdot()
@@ -84,7 +84,7 @@ random_number = random.randint(1, 100)
 guesses = 0
 
 @app.route('/', methods=['GET', 'POST'])
-async def home(request):
+ def home(request):
     global random_number, guesses
 
     if request.method == 'POST':
@@ -109,7 +109,7 @@ async def home(request):
     return htmldoc(guesses, message, color)
 
 @app.route('/new_game', methods=['POST'])
-async def new_game(request):
+ def new_game(request):
     global random_number, guesses
     random_number = random.randint(1, 100)
     guesses = 0
@@ -123,7 +123,7 @@ app.run(debug=True, port=8008)
 # Dice
 ######################################################################
 
-from microdot_asyncio import Microdot, Response
+from microdot import Microdot, Response
 import random
 app = Microdot()
 Response.default_content_type = 'text/html'
@@ -203,11 +203,11 @@ def htmldoc(dice_faces, background_colors):
     '''
 
 @app.route('/')
-async def home(request):
+ def home(request):
     return htmldoc([1], ['F0E68C'])
 
 @app.route('/roll/<num_dice>')
-async def roll_dice(request, num_dice):
+ def roll_dice(request, num_dice):
     num_dice = int(num_dice)
     dice_faces = [random.randint(1, 6) for _ in range(num_dice)]
     background_colors = [random_color() for _ in range(num_dice)]
@@ -222,7 +222,7 @@ app.run(debug=True, port=8008)
 # Traffic Light
 ######################################################################
 
-from microdot_asyncio import Microdot, Response
+from microdot import Microdot, Response
 app = Microdot()
 Response.default_content_type = 'text/html'
 
@@ -281,7 +281,7 @@ app.run(debug=True, port=8008)
 #Counter
 ######################################################################
 
-from microdot_asyncio import Microdot, Response
+from microdot import Microdot, Response
 app = Microdot()
 Response.default_content_type = 'text/html'
 
@@ -320,7 +320,7 @@ import numpy as np
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 
-from microdot_asyncio import Microdot, Response
+from microdot import Microdot, Response
 app = Microdot()
 Response.default_content_type = 'text/html'
 
@@ -369,7 +369,7 @@ app.run(host="0.0.0.0",port=5000,debug = True)
 ######################################################################
 # Pump Button Demo
 ######################################################################
-from microdot_asyncio import Microdot, Response
+from microdot import Microdot, Response
 
 app = Microdot()
 Response.default_content_type = 'text/html'
@@ -467,7 +467,7 @@ app.run(debug=True, port=8008)
 ######################################################################
 # List Demo
 ######################################################################
-from microdot_asyncio import Microdot, Response
+from microdot import Microdot, Response
 
 app = Microdot()
 Response.default_content_type = 'text/html'
@@ -497,23 +497,23 @@ def htmldoc():
         '''
 
 @app.route('/', methods=['GET', 'POST'])
-async def home(request):
+ def home(request):
     if request.method == 'POST':
         todos.append([False, request.form.get('task')])
     return htmldoc()
 
 @app.route('/add', methods=['POST'])
-async def add(request):
+ def add(request):
     todos.append([False, request.form.get('task')])
     return htmldoc()
 
 @app.route('/toggle/<index>')
-async def toggle(request, index):
+ def toggle(request, index):
     todos[int(index)][0] = not todos[int(index)][0]
     return htmldoc()
 
 @app.route('/delete/<index>')
-async def delete(request, index):
+ def delete(request, index):
     todos.pop(int(index))
     return htmldoc()
 
@@ -528,7 +528,7 @@ app.run(debug=True, port=8008)
 ######################################################################
 
 
-from microdot_asyncio import Microdot, Response
+from microdot import Microdot, Response
 import pandas as pd
 
 app = Microdot()
