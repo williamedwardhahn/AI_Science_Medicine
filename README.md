@@ -34,7 +34,9 @@
 * AI Microscope Dashboard
 
 
-## Assigned Materials
+## Viewings
+
+[Intelligent Pets](https://clp.bbcrewind.co.uk/d68f3411dfa12b0da62adca19a3d69f7) 
 
 [Expert Systems](https://www.youtube.com/watch?v=uMN3hVe2rm8)
 
