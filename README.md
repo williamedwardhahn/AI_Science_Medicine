@@ -23,6 +23,7 @@
 
 * Scientific Programming
 * [Datasets](https://colab.research.google.com/drive/1rPEm6-tTHOdfx_urnbO4txT60TbasbT9?usp=sharing)
+* [Slicing and Indexing](https://colab.research.google.com/drive/15HmcYGx-0wftkca86OBHYaJKELjVJ9Su?usp=sharing)
 * Visualization
 * Fully Connected Networks
 * Autoencoder Networks
