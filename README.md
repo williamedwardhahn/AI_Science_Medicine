@@ -22,6 +22,7 @@
 ## Notebooks
 
 * Scientific Programming
+* [MNIST Random Walk](https://colab.research.google.com/drive/17-4sufGkv1tHmqEA23o-z0JUOMI6jMFW?usp=sharing)
 * [Datasets](https://colab.research.google.com/drive/1rPEm6-tTHOdfx_urnbO4txT60TbasbT9?usp=sharing)
 * [Slicing and Indexing](https://colab.research.google.com/drive/15HmcYGx-0wftkca86OBHYaJKELjVJ9Su?usp=sharing)
 * [Optimization](https://colab.research.google.com/drive/19M60mQfizgcjtNPkY7myA1mxZ9O2h_X7?usp=sharing)
