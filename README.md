@@ -11,7 +11,7 @@
 * [Microdot](https://github.com/williamedwardhahn/AI_Science_Medicine/blob/main/Microdot_Notes.md)
 
 
-## Labs
+## Data Sources
 * Microscope Low Power
 * Microscope High Power
 * Endoscope
