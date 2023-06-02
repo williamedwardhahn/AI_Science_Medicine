@@ -27,13 +27,10 @@
 * [Slicing and Indexing](https://colab.research.google.com/drive/15HmcYGx-0wftkca86OBHYaJKELjVJ9Su?usp=sharing)
 * [Optimization](https://colab.research.google.com/drive/19M60mQfizgcjtNPkY7myA1mxZ9O2h_X7?usp=sharing)
 * [Classify MNIST Linear](https://colab.research.google.com/drive/1S_zVmHa0s0EkfIQL2DbexTH49RYOsGPZ?usp=sharing)
-* Visualization
-* Fully Connected Networks
+* [Fully Connected Networks](https://colab.research.google.com/drive/1mzDUk7lpKOiZTyGDpPve30A-A057lpsP?usp=sharing)
 * [Autoencoder Networks](https://colab.research.google.com/drive/1plbvxqA4vjJqJZ2XzUkUoZaXhabovhfv?usp=sharing)
-
 * [Generative Networks](https://colab.research.google.com/drive/1plbvxqA4vjJqJZ2XzUkUoZaXhabovhfv?usp=sharing)
 * [Convolutional Networks](https://colab.research.google.com/drive/1qK672fOInXnhV2N2cNm_wlTTGxIjaKwQ?usp=sharing)
-* Deep Convolutional Networks
 
 ## Medbot Project
 * AI Microscope Dashboard
