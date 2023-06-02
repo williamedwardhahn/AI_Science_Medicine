@@ -1,6 +1,24 @@
 # AI for Science and Medicine
 <img src = "https://www.mccrone.com/wp-content/uploads/2015/04/Diatoms_WF_Fig01.jpg" width = 400>
 
+## Notebooks
+
+* [MNIST Random Walk](https://colab.research.google.com/drive/17-4sufGkv1tHmqEA23o-z0JUOMI6jMFW?usp=sharing)
+* [Datasets](https://colab.research.google.com/drive/1rPEm6-tTHOdfx_urnbO4txT60TbasbT9?usp=sharing)
+* [Slicing and Indexing](https://colab.research.google.com/drive/15HmcYGx-0wftkca86OBHYaJKELjVJ9Su?usp=sharing)
+* [Optimization](https://colab.research.google.com/drive/19M60mQfizgcjtNPkY7myA1mxZ9O2h_X7?usp=sharing)
+* [Classify MNIST Linear](https://colab.research.google.com/drive/1S_zVmHa0s0EkfIQL2DbexTH49RYOsGPZ?usp=sharing)
+* [Fully Connected Networks](https://colab.research.google.com/drive/1mzDUk7lpKOiZTyGDpPve30A-A057lpsP?usp=sharing)
+* [Autoencoder Networks](https://colab.research.google.com/drive/1plbvxqA4vjJqJZ2XzUkUoZaXhabovhfv?usp=sharing)
+* [Generative Networks](https://colab.research.google.com/drive/1plbvxqA4vjJqJZ2XzUkUoZaXhabovhfv?usp=sharing)
+* [Convolutional Networks](https://colab.research.google.com/drive/1qK672fOInXnhV2N2cNm_wlTTGxIjaKwQ?usp=sharing)
+
+## Medbot Project
+* Expert System
+* AI Microscope Dashboard
+
+
+
 # Intro Notes
 * [Python](https://github.com/williamedwardhahn/AI_Science_Medicine/blob/main/Python_Notes.md)
 * [HTML](https://github.com/williamedwardhahn/AI_Science_Medicine/blob/main/HTML_Notes.md)
@@ -18,22 +36,6 @@
 * Eye Scanner
 * Web Camera
 * ESP32 Camera
-
-## Notebooks
-
-* [MNIST Random Walk](https://colab.research.google.com/drive/17-4sufGkv1tHmqEA23o-z0JUOMI6jMFW?usp=sharing)
-* [Datasets](https://colab.research.google.com/drive/1rPEm6-tTHOdfx_urnbO4txT60TbasbT9?usp=sharing)
-* [Slicing and Indexing](https://colab.research.google.com/drive/15HmcYGx-0wftkca86OBHYaJKELjVJ9Su?usp=sharing)
-* [Optimization](https://colab.research.google.com/drive/19M60mQfizgcjtNPkY7myA1mxZ9O2h_X7?usp=sharing)
-* [Classify MNIST Linear](https://colab.research.google.com/drive/1S_zVmHa0s0EkfIQL2DbexTH49RYOsGPZ?usp=sharing)
-* [Fully Connected Networks](https://colab.research.google.com/drive/1mzDUk7lpKOiZTyGDpPve30A-A057lpsP?usp=sharing)
-* [Autoencoder Networks](https://colab.research.google.com/drive/1plbvxqA4vjJqJZ2XzUkUoZaXhabovhfv?usp=sharing)
-* [Generative Networks](https://colab.research.google.com/drive/1plbvxqA4vjJqJZ2XzUkUoZaXhabovhfv?usp=sharing)
-* [Convolutional Networks](https://colab.research.google.com/drive/1qK672fOInXnhV2N2cNm_wlTTGxIjaKwQ?usp=sharing)
-
-## Medbot Project
-* AI Microscope Dashboard
-
 
 ## Viewings
 
