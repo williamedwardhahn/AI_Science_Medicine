@@ -1,5 +1,5 @@
 # AI for Science and Medicine
-<img src = "https://www.mccrone.com/wp-content/uploads/2015/04/Diatoms_WF_Fig01.jpg" width = 400>
+<img src = "https://www.mccrone.com/wp-content/uploads/2015/04/Diatoms_WF_Fig01.jpg" width = 200>
 
 ## Notebooks
 
