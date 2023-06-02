@@ -12,6 +12,7 @@
 * [Autoencoder Networks](https://colab.research.google.com/drive/1plbvxqA4vjJqJZ2XzUkUoZaXhabovhfv?usp=sharing)
 * [Generative Networks](https://colab.research.google.com/drive/1plbvxqA4vjJqJZ2XzUkUoZaXhabovhfv?usp=sharing)
 * [Convolutional Networks](https://colab.research.google.com/drive/1qK672fOInXnhV2N2cNm_wlTTGxIjaKwQ?usp=sharing)
+* [Deep Convolutional Networks](https://colab.research.google.com/drive/1aieMGG7dZCQGBgMrPSPw4X2A2uCXuHC7?usp=sharing)
 
 * [MedMNIST](https://colab.research.google.com/drive/1GQEQn9-kMGSvk-vwmVY_H0bLT9F-DInG?usp=sharing) 
 
