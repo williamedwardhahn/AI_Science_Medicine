@@ -29,10 +29,11 @@
 * [Classify MNIST Linear](https://colab.research.google.com/drive/1S_zVmHa0s0EkfIQL2DbexTH49RYOsGPZ?usp=sharing)
 * Visualization
 * Fully Connected Networks
-* Autoencoder Networks
+* [Autoencoder Networks](https://colab.research.google.com/drive/1plbvxqA4vjJqJZ2XzUkUoZaXhabovhfv?usp=sharing)
+
+* [Generative Networks](https://colab.research.google.com/drive/1plbvxqA4vjJqJZ2XzUkUoZaXhabovhfv?usp=sharing)
 * Convolutional Networks
 * Deep Convolutional Networks
-* Generative Networks
 
 ## Medbot Project
 * AI Microscope Dashboard
