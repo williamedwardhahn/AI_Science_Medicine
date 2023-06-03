@@ -1,6 +1,5 @@
-
-
 # Neural Network + Expert System Project
+Your job is create a medical specialist AI agent.
 Choose one of the MedMNIST datasets (i.e. OCTMNIST - Retinal OCT)
 Use ChatGPT to research and document modality and dataset details
 Create an expert system style user interface.
@@ -17,3 +16,4 @@ Your system should have at least the following features (buttons):
 * Load Model
 * Test Neural Network
 * Show plots of training and testing accuracy
+* Expert system style Q/A for patient follow up.
