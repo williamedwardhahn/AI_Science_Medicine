@@ -17,7 +17,7 @@
 * [MedMNIST](https://colab.research.google.com/drive/1GQEQn9-kMGSvk-vwmVY_H0bLT9F-DInG?usp=sharing) 
 
 ## Medbot Project
-* Expert System
+* [Expert System](https://github.com/williamedwardhahn/AI_Science_Medicine/blob/main/expert_system.md)
 * AI Microscope Dashboard
 
 
