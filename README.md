@@ -18,7 +18,7 @@
 
 ## Medbot Project
 * [Expert System](https://github.com/williamedwardhahn/AI_Science_Medicine/blob/main/expert_system.md)
-* AI Microscope Dashboard
+* [AI Microscope Dashboard](https://github.com/williamedwardhahn/AI_Science_Medicine/blob/main/Microscope_Dashboard_Project.md)
 
 
 
