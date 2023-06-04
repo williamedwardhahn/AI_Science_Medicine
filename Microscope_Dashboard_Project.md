@@ -13,5 +13,5 @@ Your system should have (at least) the following features (buttons):
 * Save Model
 * Load Model
 * Test Model
-* Run Inference on New Images
+* Run Model on New Images
 * Visualize Model Outputs
