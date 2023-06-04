@@ -6,7 +6,7 @@ Choose one of the [MedMNIST](https://medmnist.com/) datasets (i.e. OCTMNIST - Re
 
 Use ChatGPT to research and document modality and dataset details
 
-Create an [expert system](https://github.com/williamedwardhahn/AI_Science_Medicine/blob/main/Medical/Micro_Medbot_CSS.py) style user interface.
+Create an [expert system](https://github.com/williamedwardhahn/AI_Science_Medicine/blob/main/Medical/Micro_Medbot_CSS_YAML_Function3.py) style user interface.
 
 Your system should have at least the following features (buttons):
 
