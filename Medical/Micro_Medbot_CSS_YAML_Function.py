@@ -1,9 +1,24 @@
 import yaml
+import urllib.parse
+from microdot import Microdot, Response
 
-# Define custom objects
-cpr_procedure = "Perform CPR by giving chest compressions and rescue breaths."
-heimlich_maneuver = "Perform the Heimlich maneuver to clear the airway obstruction."
-stroke_procedure = "Take the person to the hospital immediately for medical treatment."
+# Define procedures as functions
+def cpr_procedure():
+    return "Perform CPR by giving chest compressions and rescue breaths."
+
+def heimlich_maneuver():
+    return "Perform the Heimlich maneuver to clear the airway obstruction."
+
+def stroke_procedure():
+    print("terminal message")
+    return "Take the person to the hospital immediately for medical treatment."
+
+# Map function names to functions
+function_dict = {
+    'cpr_procedure': cpr_procedure,
+    'heimlich_maneuver': heimlich_maneuver,
+    'stroke_procedure': stroke_procedure
+}
 
 # Define the nested dictionary
 emergency_procedures = '''
@@ -32,11 +47,11 @@ Cardiac arrest:
   question: Has the person lost consciousness and not breathing?
   responses:
     'No': Monitor the person and keep them calm. Call for medical help if necessary.
-    'Yes': Perform CPR by giving chest compressions and rescue breaths.
+    'Yes': $cpr_procedure
 Choking:
   question: Is the person able to speak or cough?
   responses:
-    'No': Perform the Heimlich maneuver to clear the airway obstruction.
+    'No': $heimlich_maneuver
     'Yes': Encourage them to keep coughing to try and dislodge the object. Call for
       medical help if necessary.
 Fracture:
@@ -51,15 +66,11 @@ Stroke:
     or speech difficulties?
   responses:
     'No': Monitor the person and keep them calm. Call for medical help if necessary.
-    'Yes': Take the person to the hospital immediately for medical treatment.
+    'Yes': $stroke_procedure
 '''
 
 # Convert YAML to dictionary
 emergency_procedures = yaml.safe_load(emergency_procedures)
-
-
-from microdot import Microdot, Response
-import urllib.parse
 
 app = Microdot()
 Response.default_content_type = 'text/html'
@@ -121,24 +132,29 @@ def present_options(request, question, responses):
     return f'<h1>{question}</h1><br>{options_html}'
 
 def process_response(request, responses):
-    if callable(responses):
-        result = responses(request)
-    elif isinstance(responses, str):
-        result = responses
+    if isinstance(responses, str):
+        if responses.startswith('$'):
+            func_name = responses[1:]  # Remove the "$" character
+            func = function_dict.get(func_name)
+            if func:
+                result = func()
+            else:
+                result = f"Function '{func_name}' not found."
+        else:
+            result = responses
     elif isinstance(responses, dict):
         if "question" in responses and "responses" in responses:
             result = present_options(request, responses['question'], responses['responses'])
         else:
             result = process_response(request, responses['responses'])
+    else:
+        result = str(responses)
     return f'<div class="response-box">{result}</div>'
-
 
 @app.route('/')
 def begin_procedure(request):
     current_state.clear()
     return css_style + present_options(request, "What is the nature of the emergency?", emergency_procedures)
-    
-    
     
 @app.route('/handle_response/<response>', methods=['GET', 'POST'])
 def handle_response_request(request, response):
@@ -146,7 +162,5 @@ def handle_response_request(request, response):
     next_step = current_state['current_responses'].get(response)  # Get the actions for the current response
     if next_step:
         return css_style + process_response(request, next_step)
-
-
 
 app.run(debug=True, port=8008)
