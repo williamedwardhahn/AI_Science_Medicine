@@ -45,6 +45,8 @@
 
 [Tensorspace](https://tensorspace.org/)
 
+[Artificial Intelligence](https://www.youtube.com/watch?v=7Uz3HYfCIGc)
+
 [Silicon Vision](https://www.youtube.com/watch?v=lwT1jUvwRLc)
 
 [Expert Systems](https://www.youtube.com/watch?v=_S3m0V_ZF_Q)
