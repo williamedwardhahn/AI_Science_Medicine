@@ -43,6 +43,12 @@
 
 ## Viewings
 
+[Tensorspace](https://tensorspace.org/)
+
+[Silicon Vision](https://www.youtube.com/watch?v=lwT1jUvwRLc)
+
+[Expert Systems](https://www.youtube.com/watch?v=_S3m0V_ZF_Q)
+
 [Intelligent Pets](https://clp.bbcrewind.co.uk/d68f3411dfa12b0da62adca19a3d69f7) 
 
 [Expert Systems](https://www.youtube.com/watch?v=uMN3hVe2rm8)
