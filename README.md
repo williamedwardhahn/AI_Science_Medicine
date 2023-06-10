@@ -43,6 +43,8 @@
 
 ## Viewings
 
+[Decision Support Systems](https://www.youtube.com/watch?v=IzjTZQIpGVU)
+
 [Tensorspace](https://tensorspace.org/)
 
 [Artificial Intelligence](https://www.youtube.com/watch?v=7Uz3HYfCIGc)
