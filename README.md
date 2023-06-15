@@ -43,6 +43,8 @@
 
 ## Viewings
 
+[Fermi Paradox Conference](https://www.youtube.com/watch?v=6NoGcpsXtdc)
+
 [Computers and Medicine](https://www.youtube.com/watch?v=Pufguf4KJfI)
 
 [Decision Support Systems](https://www.youtube.com/watch?v=IzjTZQIpGVU)
